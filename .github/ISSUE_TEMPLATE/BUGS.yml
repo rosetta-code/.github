@@ -41,14 +41,14 @@ body:
   - type: textarea
     attributes:
       label: Environment
-      description: Optional: please tell us about the environment where you're using Rosetta. This could include your OS, IDE type and version, additional packages you may have installed etc.
+      description: "Optional: please tell us about the environment where you're using Rosetta. This could include your OS, IDE type and version, additional packages you may have installed etc."
       placeholder: I use...
     validations:
       required: false
   - type: textarea
     attributes:
       label: Context
-      description: Optional: what were you working on when this issue arose?
+      description: "Optional: what were you working on when this issue arose?"
       placeholder: I was doing...
     validations:
       required: false
@@ -69,7 +69,7 @@ body:
   - type: textarea
     attributes:
       label: Steps to Reproduce
-      description: Optional: What steps can people follow to recreate the issue that you saw?
+      description: "Optional: What steps can people follow to recreate the issue that you saw?"
       placeholder: |
         1. In this environment...
         2. With this config...
