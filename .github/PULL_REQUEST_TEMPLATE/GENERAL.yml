@@ -35,16 +35,19 @@ body:
   - type: checkboxes
     attributes:
       label: To-Do
-      description: What have you done to make your contribution useful and usable? If you're unsure about any of them, don't hesitate to ask. This is just a head's up about what we must do together before we merge your code.
+      description: What have you done to make your contribution useful and usable? |
+        If you think any of these steps do not apply to you, please leave those items unchecked. |
+        If you're unsure about any of them, don't hesitate to ask. This is just a head's up about what we must do together before we merge your code.
       options:
-        - label: "**Run existing tests** - On my local system, existing unit tests pass even with the changes I made"
-        - label: "**Write new tests** - I wrote new unit tests for the changes I made OR new unit tests are not necessary"
-        - label: "**Publish changes in dependencies** - Required changes in dependencies have been merged and published OR my contribution doesn't involve changes to third-party libraries"
-        - label: "**Linting** - Linters pass on my local system for my contributions OR I used Rosetta's preferred code formatter"
+        - label: "**Run existing tests** - On my local system, existing tests pass even with the changes I made"
+        - label: "**Write new unit tests** - I wrote new tests to confirm how the changes I made work"
+        - label: "**Write integration test** - I wrote tests to verify how my contribution works with other relevant parts of Rosetta"
+        - label: "**Write confirmation test** - I wrote tests to show that a certain bug has been fixed"
+        - label: "**Publish changes in dependencies** - Required changes in dependencies have been merged and published"
+        - label: "**Linting** - Linters pass on my local system for my contributions"
         - label: "**Add comments** - I added comments to my code, particularly in hard-to-understand areas"
-        - label: "**Document contribution** - I updated the documentation for my changes OR new documentation is unnecessary"
-        - label: "**Give examples** - I included examples for how to use the functionality I added OR new examples are unnecessary"
-        - label: "**Add example data** - I added example data to make it easier to test my changes OR new example data is unnecessary"
+        - label: "**Document contribution** - I updated the documentation for my changes"
+        - label: "**Give examples** - I included examples for how to use the functionality I added"
   - type: textarea
     attributes:
       label: Summary 
