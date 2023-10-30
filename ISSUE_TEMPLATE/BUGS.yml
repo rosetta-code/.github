@@ -1,0 +1,88 @@
+name: Report a Bug
+description: Report a bug with Rosetta
+title: "[Bug]: "
+labels: ["bug", "triage"]
+projects: ["octo-org/1", "octo-org/44"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this bug report!
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: Before we start, we need to ask a few questions to make sure you are in the right place.
+      options:
+      - label: I'm reporting a bug in Rosetta. I am not asking for a feature or troubleshooting.
+        required: true
+      - label: I have checked the Rosetta documentation.
+        required: true
+      - label: I have searched existing bug reports for similar issues.
+        required: true
+      - label: The bug I'm reporting has not been reported before.
+        required: true
+      - label: I agree to abide by Rosetta's Community Code of Conduct.
+        required: true
+  - type: input
+    attributes:
+      label: Rosetta version
+      description: What version of Rosetta were you using?
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Rosetta language
+      description: What language were you using to interface with Rosetta?
+      options:
+        - Matlab
+        - Python
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Environment
+      description: Optional: please tell us about the environment where you're using Rosetta. This could include your OS, IDE type and version, additional packages you may have installed etc.
+      placeholder: I use...
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Context
+      description: Optional: what were you working on when this issue arose?
+      placeholder: I was doing...
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to see when you ran into the issue?
+      placeholder: I expected to...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Actual Behavior
+      description: What did you experience?
+      placeholder: I saw...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to Reproduce
+      description: Optional: What steps can people follow to recreate the issue that you saw?
+      placeholder: |
+        1. In this environment...
+        2. With this config...
+        3. Run '...'
+        4. See error...
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Other Info
+      description: |
+        Do you have any other information that you could share with us? This could be links, references, or any other kind of information  that will give us more context about the issue you are encountering.
+  
+        Tip: You can attach images or log files! Just click this area to highlight it, then drag your files in from your file explorer.
+    validations:
+      required: false
