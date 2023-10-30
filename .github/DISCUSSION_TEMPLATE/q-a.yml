@@ -1,6 +1,4 @@
-name: Q&A
-description: Ask the Rosetta community for help
-title: ""
+title: "[Question] "
 body:
   - type: input
     attributes:
