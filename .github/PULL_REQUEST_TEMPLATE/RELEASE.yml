@@ -1,0 +1,53 @@
+name: Prepare for Release
+description: Prepare to push development-grade code into a stable branch for Rosetta
+title: "[PR-RELEASE]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This pull request should ONLY be used to prepare for stable releases.
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: "Before we start, we need to ask a few questions to make sure you are in the right place. This will help us triage your issue as quickly as possible. Please read [GitHub's terms of service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) as of Nov. 16, 2020 and Rosetta's Contributors Guidelines for more information."
+      options:
+      - label: I have read the licensing agreement for Rosetta repository where I am submitting this pull request.
+        required: true
+      - label: I've read and will abide by the Contributors' Guidelines and Community Code of Conduct for Rosetta.
+        required: true
+      - label: I have the right to license the contribution that I am submitting.
+        required: true
+      - label: I license my contribution under the same terms as the repository where I am submitting this pull request.
+        required: true
+  - type: checkboxes
+    attributes:
+      label: Feature Type
+      description: What type of change are you introducing to Rosetta?
+      options:
+        - label: "**Prepare for stable release** - This commit prepares for a stable release of a Rosetta repository"
+        - label: "**Hotfix** - I am submitting an urgent change that should be published as soon as possible"
+  - type: checkboxes
+    attributes:
+      label: Release prep
+      description: "What have you done to ensure that this commit will make Rosetta release-ready?"
+      options:
+        - label: "Unit tests - Verify how individual classes, methods, functions etc. work"
+        - label: "Integration tests - Verify how specific parts of a Rosetta library with each other"
+        - label: "Confirmation tests - Verify that previous bugs do not recur"
+        - label: "Functional tests - Affirm how different features of Rosetta operate together (e.g. smoke tests)"
+        - label: "Acceptance tests - Manually, qualitatively confirm that Rosetta works 'as expected' (see below)"
+        - label: "Performance tests - Benchmark Rosetta's speed, stability etc."
+  - type: textarea
+    attributes:
+      label: Summary 
+      description: "What will change with Rosetta as a result of this commit? Your response to this question will be used for our release notes."
+      placeholder: "As a result of this push,..."
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Acceptance tests 
+      description: "What should we look at to judge whether the results of this pull are acceptable?"
+      placeholder: "This pull will..."
+    validations:
+      required: true
