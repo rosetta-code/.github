@@ -1,8 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Get Help with Using Rosetta
+  - name: Get help with using Rosetta
     url: https://github.com/orgs/rosetta-code/discussions
     about: Ask and discuss specific coding questions.
-  - name: GitHub Security Bug Bounty
-    url: https://bounty.github.com/
-    about: Report security vulnerabilities.
