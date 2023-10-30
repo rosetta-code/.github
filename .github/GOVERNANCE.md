@@ -1,0 +1,2 @@
+# Governance
+The governance structure for the Rosetta project will be determined in the near future. It is currently being maintained solely by Kéita A. Yokoyama, a PhD student at the Joint Department of Biomedical Engineering at the University of North Carolina at Chapel Hill and North Carolina State University (NC, USA) under the advisement of Prof. Caterina Gallippi from the same department and institutions.
