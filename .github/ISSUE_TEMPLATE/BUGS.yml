@@ -1,8 +1,6 @@
 name: Report a bug
 description: Report a bug that causes unexpected behaviors with Rosetta.
 title: "[Bug]: "
-labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
 body:
   - type: markdown
     attributes:
@@ -40,15 +38,22 @@ body:
       required: true
   - type: textarea
     attributes:
+      label: Adapters
+      description: "Optional: If your issue involves an Adapter, please tell us what third-party software and/or hardware you're using."
+      placeholder: I use...
+    validations:
+      required: false
+  - type: textarea
+    attributes:
       label: Environment
-      description: "Optional: please tell us about the environment where you're using Rosetta. This could include your OS, IDE type and version, additional packages you may have installed etc."
+      description: "Optional: Please tell us about the environment where you're using Rosetta. This could include your OS, IDE type and version, additional packages you may have installed etc."
       placeholder: I use...
     validations:
       required: false
   - type: textarea
     attributes:
       label: Context
-      description: "Optional: what were you working on when this issue arose?"
+      description: "Optional: What were you working on when this issue arose?"
       placeholder: I was doing...
     validations:
       required: false

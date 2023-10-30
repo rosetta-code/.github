@@ -1,0 +1,56 @@
+name: Q&A
+description: Ask the Rosetta community for help
+title: ""
+body:
+  - type: input
+    attributes:
+      label: Rosetta version
+      description: What version of Rosetta were you using?
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Rosetta language
+      description: What language were you using to interface with Rosetta?
+      options:
+        - Matlab
+        - Python
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Environment
+      description: "Optional: Please tell us about the environment where you're using Rosetta. This could include your OS, IDE type and version, additional packages you may have installed etc."
+      placeholder: I use...
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Adapters
+      description: "Optional: If your issue involves an Adapter, please tell us what third-party software and/or hardware you're using."
+      placeholder: I use...
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: What were you doing? What did you expect to see when you ran into the issue?
+      placeholder: I expected to...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Actual Behavior
+      description: What did you experience?
+      placeholder: I saw...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Other Info
+      description: |
+        Do you have any other information that you could share with us? This could be links, references, or any other kind of information  that will give us more context about the issue you are encountering.
+  
+        Tip: You can attach images or log files! Just click this area to highlight it, then drag your files in from your file explorer.
+    validations:
+      required: false

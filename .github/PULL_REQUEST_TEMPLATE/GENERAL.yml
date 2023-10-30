@@ -1,0 +1,88 @@
+name: Submit Pull Request
+description: Request changes or additions to a Rosetta repository.
+title: "[PR]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to make and fill out this pull request!
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: "Before we start, we need to ask a few questions to make sure you are in the right place. This will help us triage your issue as quickly as possible. Please read [GitHub's terms of service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service) as of Nov. 16, 2020 and Rosetta's Contributors Guidelines for more information."
+      options:
+      - label: I have read the licensing agreement for Rosetta repository where I am submitting this pull request.
+        required: true
+      - label: I've read and will abide by the Contributors' Guidelines and Community Code of Conduct for Rosetta.
+        required: true
+      - label: I have the right to license the contribution that I am submitting.
+        required: true
+      - label: I license my contribution under the same terms as the repository where I am submitting this pull request.
+        required: true
+  - type: checkboxes
+    attributes:
+      label: Feature Type
+      description: What type of change are you introducing to Rosetta?
+      options:
+        - label: "**Non-breaking bug fix** - My change fixes an issue and does not change existing functionality"
+        - label: "**Non-breaking new feature** - My changes adds functionality without breaking existing functionality"
+        - label: "**Breaking bug fix** - My change fixes an issue AND changes existing functionality"
+        - label: "**Breaking new feature** - My change adds new functionality AND changes existing functionality"
+        - label: "**Performance** - My changes make existing functionalities run faster or more robustly"
+        - label: "**Stylistic** - My changes make existing functionalities easier to use (e.g. code refactoring, UI/UX)"
+        - label: "**Documentation** - My change involves Rosetta's documentation or code comments"
+        - label: "**Maintenance** - I am a Rosetta team member performing a maintenance task (e.g. CI, release preparations)"
+  - type: checkboxes
+    attributes:
+      label: To-Do
+      description: What have you done to make your contribution useful and usable? If you're unsure about any of them, don't hesitate to ask. This is just a head's up about what we must do together before we merge your code.
+      options:
+        - label: "**Run existing tests** - On my local system, existing unit tests pass even with the changes I made"
+        - label: "**Write new tests** - I wrote new unit tests for the changes I made OR new unit tests are not necessary"
+        - label: "**Publish changes in dependencies** - Required changes in dependencies have been merged and published OR my contribution doesn't involve changes to third-party libraries"
+        - label: "**Linting** - Linters pass on my local system for my contributions OR I used Rosetta's preferred code formatter"
+        - label: "**Add comments** - I added comments to my code, particularly in hard-to-understand areas"
+        - label: "**Document contribution** - I updated the documentation for my changes OR new documentation is unnecessary"
+        - label: "**Give examples** - I included examples for how to use the functionality I added OR new examples are unnecessary"
+        - label: "**Add example data** - I added example data to make it easier to test my changes OR new example data is unnecessary"
+  - type: textarea
+    attributes:
+      label: Summary 
+      description: "What does your contribution do? Please describe the additions or changes you are requesting."
+      placeholder: My contribution does...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Adapters
+      description: "Optional: If your contribution involves an Adapter, please tell us what third-party software and/or hardware you're using."
+      placeholder: I use...
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Related Info
+      description: "Optional: If there is additional relevant information that can help us understand your contribution (e.g. screenshots, link to previous bug reports), please add them here."
+      placeholder: Please see...
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: System Information
+      description: "Optional: What hardware and software did you use to write and/or test your contribution?"
+      placeholder: I have...
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Post-Deployment Tasks
+      description: "Optional: What steps can people follow to recreate the issue that you saw?"
+      placeholder: You should...
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: GIF Summary
+      description: "Optional: What GIF summarizes your contribution and/or describes how you feel about it?"
+    validations:
+      required: false
