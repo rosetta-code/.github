@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
   - name: Get help with using Rosetta
-    url: https://github.com/orgs/rosetta-code/discussions
+    url: https://github.com/orgs/rosetta-code/discussions/new?category=q-a
     about: Ask and discuss specific coding questions.

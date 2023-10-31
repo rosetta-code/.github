@@ -1,0 +1,62 @@
+name: Request a feature
+description: Request a new feature for Rosetta.
+title: "[Feature]: "
+tag: ["type: feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to fill out this feature request!
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: Before we start, we need to ask a few questions to make sure you are in the right place.
+      options:
+      - label: I have checked the Rosetta documentation.
+        required: true
+      - label: I have searched existing posts for similar feature requests.
+        required: true
+      - label: The feature I'm requesting has not been posted before.
+        required: true
+      - label: I agree to abide by Rosetta's Community Code of Conduct.
+        required: true
+  - type: dropdown
+    attributes:
+      label: Rosetta language
+      description: What programming language or environment does your suggestion concern?
+      options:
+        - All languages
+        - Matlab
+        - Python
+        - Another language
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Adapters
+      description: "Optional: What adapter (or third-party platform that doesn't have an adapter yet) is your suggestion about?"
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Context
+      description: "What actions do you want to accomplish using Rosetta and your suggested feature?"
+      placeholder: I would like to do...
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Expected Behavior
+      description: "Optional: What do you expect to see when you use your requested feature? What requirements are important?"
+      placeholder: I expect to...
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Other Info
+      description: |
+        Do you have any other information that you could share with us? This could be links, references, or any other kind of information  that will give us more context about the issue you are encountering.
+  
+        Tip: You can attach images or log files! Just click this area to highlight it, then drag your files in from your file explorer.
+    validations:
+      required: false

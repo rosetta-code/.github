@@ -1,6 +1,7 @@
 name: Prepare for Release
 description: Prepare to push development-grade code into a stable branch for Rosetta
 title: "[PR-RELEASE]: "
+tag: ["type: maintenance"]
 body:
   - type: markdown
     attributes:
@@ -21,7 +22,7 @@ body:
         required: true
   - type: checkboxes
     attributes:
-      label: Feature Type
+      label: Feature type
       description: What type of change are you introducing to Rosetta?
       options:
         - label: "**Prepare for stable release** - This commit prepares for a stable release of a Rosetta repository"

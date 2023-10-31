@@ -21,7 +21,7 @@ body:
         required: true
   - type: checkboxes
     attributes:
-      label: Feature Type
+      label: Feature type
       description: What type of change are you introducing to Rosetta?
       options:
         - label: "**Non-breaking bug fix** - My change fixes an issue and does not change existing functionality"
@@ -34,7 +34,7 @@ body:
         - label: "**Maintenance** - I am a Rosetta team member performing a maintenance task (e.g. CI, release preparations)"
   - type: checkboxes
     attributes:
-      label: To-Do
+      label: To-do
       description: What have you done to make your contribution useful and usable? |
         If you think any of these steps do not apply to you, please leave those items unchecked. |
         If you're unsure about any of them, don't hesitate to ask. This is just a head's up about what we must do together before we merge your code.
@@ -64,28 +64,28 @@ body:
       required: false
   - type: textarea
     attributes:
-      label: Related Info
+      label: Related info
       description: "Optional: If there is additional relevant information that can help us understand your contribution (e.g. screenshots, link to previous bug reports), please add them here."
       placeholder: Please see...
     validations:
       required: false
   - type: textarea
     attributes:
-      label: System Information
+      label: System information
       description: "Optional: What hardware and software did you use to write and/or test your contribution?"
       placeholder: I have...
     validations:
       required: false
   - type: textarea
     attributes:
-      label: Post-Deployment Tasks
+      label: Post-deployment tasks
       description: "Optional: What steps can people follow to recreate the issue that you saw?"
       placeholder: You should...
     validations:
       required: false
   - type: textarea
     attributes:
-      label: GIF Summary
+      label: GIF summary
       description: "Optional: What GIF summarizes your contribution and/or describes how you feel about it?"
     validations:
       required: false

@@ -31,21 +31,21 @@ body:
       required: false
   - type: textarea
     attributes:
-      label: Expected Behavior
+      label: Expected behavior
       description: What were you doing? What did you expect to see when you ran into the issue?
       placeholder: I expected to...
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Actual Behavior
+      label: Actual behavior
       description: What did you experience?
       placeholder: I saw...
     validations:
       required: true
   - type: textarea
     attributes:
-      label: Other Info
+      label: Other info
       description: |
         Do you have any other information that you could share with us? This could be links, references, or any other kind of information  that will give us more context about the issue you are encountering.
   
