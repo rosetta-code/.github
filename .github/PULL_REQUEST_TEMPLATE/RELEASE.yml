@@ -1,7 +1,7 @@
 name: Prepare for Release
 description: Prepare to push development-grade code into a stable branch for Rosetta
 title: "[PR-RELEASE]: "
-tag: ["type: maintenance"]
+labels: ["type: maintenance"]
 body:
   - type: markdown
     attributes:

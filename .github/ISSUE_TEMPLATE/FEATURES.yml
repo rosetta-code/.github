@@ -1,7 +1,7 @@
 name: Request a feature
 description: Request a new feature for Rosetta.
 title: "[Feature]: "
-tag: ["type: feature"]
+labels: ["type: feature"]
 body:
   - type: markdown
     attributes:
