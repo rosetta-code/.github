@@ -1,6 +1,6 @@
 name: Plan for a versioned release
 description: Create a to-do list for a versioned release of Rosetta.
-title: "[Release]: "
+title: "[Release]: vX.Y.Z for LANGUAGE"
 body:
   - type: textarea
     attributes:
@@ -12,7 +12,7 @@ body:
   - type: textarea
     attributes:
       label: Feature Checklist
-      description: What did you expect to see when you ran into the issue?
-      placeholder: I expected to...
+      description: "What new features or changes will be part of this release?"
+      placeholder: Each feature should be listed in its own line starting with "- [ ] " followed by a brief description or pull request/issue link.
     validations:
       required: true
