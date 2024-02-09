@@ -16,19 +16,3 @@ body:
       placeholder: I expected to...
     validations:
       required: true
-  - type: textarea
-    attributes:
-      label: Actual behavior
-      description: What did you experience?
-      placeholder: I saw...
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: Feature checklist
-      description: "Optional: What steps can people follow to recreate the issue that you saw?"
-      placeholder: |
-        Enter "- [ ] " to add a checkbox. Follow this string with a short description of a |
-        feature to be added or changed. Alternatively, you can link to an existing Issue or Pull Request.
-    validations:
-      required: true
