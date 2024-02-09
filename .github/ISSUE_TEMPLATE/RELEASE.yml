@@ -1,0 +1,34 @@
+name: Plan for a versioned release
+description: Create a to-do list for a versioned release of Rosetta.
+title: "[Release]: "
+body:
+  - type: textarea
+    attributes:
+      label: Context
+      description: "Please describe the situation that justifies this new version release."
+      placeholder: This issue submission describes a roadmap of features to...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Feature Checklist
+      description: What did you expect to see when you ran into the issue?
+      placeholder: I expected to...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Actual behavior
+      description: What did you experience?
+      placeholder: I saw...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Feature checklist
+      description: "Optional: What steps can people follow to recreate the issue that you saw?"
+      placeholder: |
+        Enter "- [ ] " to add a checkbox. Follow this string with a short description of a |
+        feature to be added or changed. Alternatively, you can link to an existing Issue or Pull Request.
+    validations:
+      required: true
