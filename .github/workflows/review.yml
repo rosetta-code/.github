@@ -1,0 +1,15 @@
+name: 'OSS Review Tool'
+on: pull_request
+jobs:
+  ort:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set Git to use HTTPS for Git cloning
+        run: git config --global url.https://github.com/.
+      - name: Checkout project
+        uses: actions/checkout@v3
+      - name: Run GitHub Action for OSS Review Toolkit
+        uses: oss-review-toolkit/ort-ci-github-action@v1
+        with:
+          allow-dynamic-versions: 'true'
+          fail-on: 'violations'
